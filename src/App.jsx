@@ -3,39 +3,24 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 
-import { useState } from "react"
+import CounterCard from "./Components/counterCard"
 
 function App() {
-  let [count, setCount] = useState(0)
 
-  const addvalue = ()=>{
-    if(count<20){
-      count = count+1
-      setCount(count)
-    }
-    else{
-      setCount(0)
-    }
-    
-  }
-
-  const deletevalue = ()=>{
-    if(count>0){
-      count = count-1
-      setCount(count)
-    }
-    else{
-      setCount(0)
-    }
-    
-  }
   return (
-    <>
-          <h1> Chai Code Aur React</h1>
-          <h2> value is: {count}</h2>
-          <button onClick={addvalue}>Add Value </button>
-          <button onClick={deletevalue}>Remove Value</button>
-    </>
+    <div className="h-screen w-full">
+      <div className="flex justify-center items-center">
+      <CounterCard name="Utkarsh"/>
+      <CounterCard name="Mohan"/>
+      </div>
+      
+      <div className="flex justify-center items-center">
+      <CounterCard name="Ravindra"/>
+      <CounterCard name="Sachin"/>
+
+      </div>
+    </div>
+    
   )
 }
 
