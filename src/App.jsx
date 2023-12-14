@@ -1,14 +1,11 @@
-//import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
-
+import Header from "./Components/Header"
 import CounterCard from "./Components/counterCard"
 
 function App() {
 
   return (
     <div className="h-screen w-full">
+      <Header/>
       <div className="flex justify-center items-center">
       <CounterCard name="Utkarsh"/>
       <CounterCard name="Mohan"/>
